@@ -60,6 +60,15 @@
             font-weight: 600;
             color: #000;
         }
+        .disclaimer-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
         .legal-note {
             font-size: 12px;
             color: #888;
@@ -73,8 +82,13 @@
 
     <h1>Datenschutzerklärung</h1>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+    <div class="disclaimer-box">
+        <strong>Rechtlicher Hinweis:</strong><br>
+        Die App „Anwalt Guru“ bietet ausschließlich eine KI-gestützte Strukturierung und Informationsextraktion von Dokumenten an. <strong>Wir erbringen keine Rechtsberatung</strong> im Sinne des Rechtsdienstleistungsgesetzes (RDG). Die Ergebnisse sind unverbindlich, dienen der Orientierung und ersetzen keine juristische Prüfung durch einen zugelassenen Rechtsanwalt. Es entsteht kein Mandatsverhältnis.
+    </div>
+
+    <h2>1. Verantwortlicher und Kontakt</h2>
+    <p>Verantwortlich für die Datenverarbeitung ist:</p>
     <p>
         <strong>GuruSense UG (haftungsbeschränkt)</strong><br>
         Vertreten durch: Daniel Defiebre<br>
@@ -85,65 +99,54 @@
         E-Mail: <a href="mailto:daniel.defiebre@gurusense.de">daniel.defiebre@gurusense.de</a>
     </p>
 
-    <h2>2. Datenspeicherung und Hosting (Serverstandort EU)</h2>
+    <h2>2. Hosting und Datenstandort (Deutschland)</h2>
     <p>
-        Der Schutz Ihrer juristischen Daten und Dokumente hat für uns höchste Priorität. Wir nutzen für den Betrieb der App „Anwalt Guru“ die Infrastruktur der <strong>Google Cloud Platform</strong> sowie <strong>Google Firebase</strong>.
+        Die App nutzt die <strong>Google Cloud Platform</strong> (GCP) und <strong>Google Firebase</strong>. 
     </p>
     <p>
-        <strong>Standortbindung (EU):</strong> Wir haben unsere Systeme technisch so konfiguriert, dass die Speicherung und Verarbeitung Ihrer personenbezogenen Daten (Datenbanken, Dokumente) ausschließlich in Rechenzentren innerhalb der <strong>Europäischen Union (EU)</strong> erfolgt.
+        <strong>Daten-Residenz:</strong> Wir haben unsere Cloud-Umgebung so konfiguriert, dass die dauerhafte Speicherung Ihrer personenbezogenen Daten (Benutzerprofile, hochgeladene Dokumente und Datenbanken) ausschließlich in der Google-Region <strong>europe-west3 (Frankfurt am Main, Deutschland)</strong> erfolgt.
     </p>
     <p>
-        Verantwortlicher Anbieter der Cloud-Dienste ist Google Cloud EMEA Ltd. (Irland). Es besteht ein Vertrag zur Auftragsverarbeitung (AVV) gemäß Art. 28 DSGVO, der den Schutz Ihrer Daten nach europäischen Standards garantiert.
-    </p>
-
-    <h2>3. KI-Verarbeitung (Google Vertex AI)</h2>
-    <p>
-        Zur inhaltlichen Analyse Ihrer Rechtsfragen und Dokumente nutzen wir fortschrittliche KI-Modelle (Google Gemini), bereitgestellt über <strong>Google Vertex AI</strong>.
+        <strong>Sicherheit:</strong> Alle Daten werden während der Übertragung verschlüsselt (TLS/SSL). Gespeicherte Dokumente werden durch Verschlüsselungsverfahren auf unseren Servern geschützt ("Encryption at Rest").
     </p>
 
-    <h3>3.1. Verarbeitung innerhalb der EU</h3>
+    <h2>3. KI-Informationsverarbeitung (Google Vertex AI)</h2>
     <p>
-        Für die Analyse Ihrer Dokumente findet <strong>kein</strong> globaler Datentransfer statt. Wir nutzen explizit die EU-Endpunkte von Vertex AI.
+        Zur automatisierten Analyse Ihrer Eingaben nutzen wir KI-Modelle (z. B. Google Gemini) über <strong>Google Vertex AI</strong>.
+    </p>
+
+    <h3>3.1. Verarbeitung und Drittlandtransfer</h3>
+    <p>
+        Die Verarbeitung erfolgt nach dem <strong>"EU-First"-Prinzip</strong> bevorzugt in europäischen Rechenzentren. Falls technisch notwendig, kann eine flüchtige Verarbeitung über gesicherte globale Endpunkte erfolgen. 
     </p>
     <ul>
-        <li>Ihre Texte und Bilder werden zur Analyse an gesicherte Google-Server innerhalb der Europäischen Union gesendet (z.B. Belgien, Frankfurt oder Niederlande).</li>
-        <li>Die generierten Antworten werden von dort direkt zurück an Ihr Gerät übertragen.</li>
-        <li>Google verwendet Ihre Daten bei Nutzung der Enterprise-API vertragsgemäß <strong>nicht</strong> zum Training der KI-Modelle. Ihre Daten bleiben vertraulich.</li>
+        <li><strong>Kein KI-Training:</strong> Google nutzt Ihre über die Vertex AI Enterprise-API verarbeiteten Kundendaten vertragsgemäß <strong>nicht</strong> zum Training seiner öffentlichen Basismodelle.</li>
+        <li><strong>Drittlandtransfer:</strong> Bei einer Verarbeitung in den USA ist die Sicherheit durch das EU-U.S. Data Privacy Framework (DPF) sowie durch EU-Standardvertragsklauseln gewährleistet.</li>
     </ul>
 
-    <h3>3.2. Umgang mit sensiblen Daten (Art. 9 DSGVO)</h3>
+    <h3>3.2. Besondere Kategorien von Daten (Art. 9 DSGVO)</h3>
     <p>
-        Da Ihre hochgeladenen Dokumente (z.B. Anwaltsschreiben, Klageschriften, Urteile, Atteste) sensible Daten (Gesundheitsdaten, Daten zu Straftaten oder Ordnungswidrigkeiten) enthalten können, verarbeiten wir diese nur auf Basis Ihrer <strong>ausdrücklichen Einwilligung</strong> (Art. 9 Abs. 2 lit. a DSGVO), die wir vor der Nutzung in der App abfragen.
+        Sofern Ihre Dokumente sensible Daten (z. B. Gesundheitsdaten, Informationen zu rechtlichen Verfahren) enthalten, verarbeiten wir diese ausschließlich auf Grundlage Ihrer <strong>ausdrücklichen Einwilligung</strong>. Diese erteilen Sie uns aktiv durch das Hochladen und Starten der Analyse. Sie umfasst auch die technisch bedingte flüchtige Übermittlung in Drittstaaten (Art. 49 Abs. 1 lit. a DSGVO).
     </p>
 
-    <h2>4. Analyse des Nutzungsverhaltens (Tracking)</h2>
+    <h2>4. Nutzungsanalyse und Stabilität</h2>
+    
+    <h3>4.1. Amplitude Analytics (EU-Residency)</h3>
     <p>
-        Um die App technisch zu verbessern, nutzen wir Analysedienste. Hierbei unterscheiden wir strikt zwischen Ihren <strong>Inhalten</strong> (Dokumente/Rechtsfragen) und technischen <strong>Metadaten</strong> (Klicks/Abstürze).
+        Wir nutzen Amplitude zur technischen Optimierung. Wir verwenden hierfür die <strong>Amplitude EU-Instanz</strong>. Die Daten werden ausschließlich in <strong>Frankfurt (Deutschland)</strong> gespeichert. Es werden keine inhaltlichen Dokumentdaten oder Klarnamen übertragen.
     </p>
 
-    <h3>4.1. Amplitude Analytics (USA)</h3>
+    <h3>4.2. Google Firebase (Crashlytics)</h3>
     <p>
-        Wir nutzen den Dienst Amplitude (San Francisco, USA) zur Analyse der Nutzerströme (z.B. „Welche Funktionen werden häufig genutzt?“).
-    </p>
-    <ul>
-        <li><strong>WICHTIG:</strong> Wir übermitteln an Amplitude <strong>keine</strong> Inhalte Ihrer Dokumente, keine juristischen Fragestellungen und keine sensiblen Personendaten. Es werden lediglich technische Ereignisse (Events) und pseudonyme IDs übertragen.</li>
-        <li><strong>Drittlandtransfer:</strong> Da Amplitude seinen Sitz in den USA hat, werden diese technischen Metadaten in die USA übermittelt. Amplitude ist unter dem <strong>EU-U.S. Data Privacy Framework (DPF)</strong> zertifiziert, was ein angemessenes Datenschutzniveau für diese nicht-sensiblen Daten garantiert.</li>
-    </ul>
-
-    <h3>4.2. Google Firebase (Crashlytics & Analytics)</h3>
-    <p>
-        Wir nutzen Google Firebase für Absturzberichte und technische Leistungsdaten. Die Daten werden innerhalb der Google Cloud Infrastruktur (siehe Punkt 2) verarbeitet. IP-Adressen werden standardmäßig anonymisiert.
+        Dient der Fehleranalyse bei App-Abstürzen. Es werden lediglich technische Geräteinformationen übertragen, keine inhaltlichen Daten Ihrer Dokumente.
     </p>
 
-    <h2>5. Betroffenenrechte</h2>
+    <h2>5. Ihre Rechte</h2>
     <p>
-        Sie haben das Recht auf Auskunft, Berichtigung, Löschung sowie auf Einschränkung der Verarbeitung Ihrer gespeicherten Daten.
-    </p>
-    <p>
-        Da die Verarbeitung Ihrer sensiblen Daten auf Ihrer Einwilligung beruht, können Sie diese <strong>Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen</strong>. Dies können Sie durch Löschen der Daten in der App oder durch eine Nachricht an <a href="mailto:daniel.defiebre@gurusense.de">daniel.defiebre@gurusense.de</a> veranlassen.
+        Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit. Da die Verarbeitung auf Ihrer Einwilligung beruht, können Sie diese jederzeit widerrufen (z. B. durch Löschen Ihres Benutzerkontos in den App-Einstellungen).
     </p>
 
-    <p class="legal-note">Stand: 10.12.2025</p>
+    <p class="legal-note">Stand: 04.02.2026</p>
 
 </body>
 </html>
